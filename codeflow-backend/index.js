@@ -58,7 +58,7 @@ const startServer = async () => {
         app.listen(port, () => {
             console.log(`Server is running at http://localhost:${port}`);
         });
-        initDB();
+        //initDB();
 
     } catch (err) {
         console.error('Error connecting to MongoDB:', err);
