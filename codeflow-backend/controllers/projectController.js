@@ -34,7 +34,7 @@ const createProject = async (req, res) => {
         });
     } catch (error) {
         console.error("Error creating project:", error);
-        res.status(500).json({ success: false, message: "Internal server error while creating project" });
+        res.status(500).json({ success: false, message: error.message });
     }
 }
 
