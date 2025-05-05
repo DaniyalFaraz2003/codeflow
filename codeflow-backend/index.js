@@ -2,17 +2,17 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const { initDB } = require("./utils/initDB");
-const { logger } = require("./middleware/logger");
+const { initDB } = require("./utils/initDB.js");
+const { logger } = require("./middleware/logger.js");
 const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 
-const authRoutes = require("./routes/authRoutes");
+const authRoutes = require("./routes/authRoutes.js");
 const taskRouter = require("./routes/taskRoutes.js");
-const projectRoutes = require("./routes/projectRoutes");
-const boardRoutes = require("./routes/boardRoutes");
-const repositoryRoutes = require("./routes/repositoryRoutes");
+const projectRoutes = require("./routes/projectRoutes.js");
+const boardRoutes = require("./routes/boardRoutes.js");
+const repositoryRoutes = require("./routes/repositoryRoutes.js");
 
 const app = express();
 const port = process.env.PORT || 5000;
