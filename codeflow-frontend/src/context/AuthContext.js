@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
 
     // Configure axios to include credentials
     axios.defaults.withCredentials = true;
-    axios.defaults.baseURL = 'http://localhost:5000/api';
+    axios.defaults.baseURL = 'https://codeflow-backend-mu.vercel.app/';
 
     // Check if user is logged in on initial load
     useEffect(() => {
