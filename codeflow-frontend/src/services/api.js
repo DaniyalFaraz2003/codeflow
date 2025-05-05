@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://codeflow-backend-mu.vercel.app/";
+const API_URL = "https://codeflow-backend-mu.vercel.app/api/";
 
 const api = axios.create({
     baseURL: API_URL,
