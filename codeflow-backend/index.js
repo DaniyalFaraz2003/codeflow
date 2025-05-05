@@ -20,7 +20,7 @@ const port = process.env.PORT || 5000;
 dotenv.config();
 app.use(logger);
 app.use(cors({
-    origin: 'https://codeflow-frontend-eight.vercel.app/', // Your React app URL
+    origin: 'https://codeflow-frontend-eight.vercel.app', // Your React app URL
     credentials: true
 }));
 app.use(cookieParser());
