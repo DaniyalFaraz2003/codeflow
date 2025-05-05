@@ -1,0 +1,58 @@
+user {
+    id
+    name
+    username
+    password
+    image
+}
+
+project {
+    id
+    name
+    description
+    user-id
+    created-at 
+}
+
+user-project {
+    user-id
+    project-id
+}
+
+kanban {
+    id
+    project-id 
+}
+
+task {
+    id 
+    title 
+    description 
+    status
+    kanban-id
+    created-at
+    updated-at  
+}
+
+repository {
+    id
+    project-id 
+
+}
+
+file {
+    id 
+    name 
+    content
+    repository-id 
+    user-id 
+}
+
+commit {
+    id 
+    hash 
+    message
+    repository-id
+    user-id
+    timestamp
+}

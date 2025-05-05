@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+@layer base {
+  pre {
+    margin: 0 !important;
+    padding: 1rem !important;
+    background: #1E1E1E !important;
+    border: 1px solid #3E3E42 !important;
+    border-radius: 4px !important;
+  }
+
+  code {
+    color: #CCCCCC !important;
+    background: transparent !important;
+    padding: 0 !important;
+    font-size: 0.9em !important;
+  }
+
+  /* Syntax highlighting */
+  .hljs-comment,
+  .hljs-quote {
+    color: #6A9955;
+  }
+
+  .hljs-variable,
+  .hljs-template-variable,
+  .hljs-attribute,
+  .hljs-tag,
+  .hljs-name,
+  .hljs-regexp,
+  .hljs-link,
+  .hljs-name,
+  .hljs-selector-id,
+  .hljs-selector-class {
+    color: #9CDCFE;
+  }
+
+  .hljs-number,
+  .hljs-meta,
+  .hljs-built_in,
+  .hljs-builtin-name,
+  .hljs-literal,
+  .hljs-type,
+  .hljs-params {
+    color: #4EC9B0;
+  }
+
+  .hljs-string,
+  .hljs-symbol,
+  .hljs-bullet {
+    color: #CE9178;
+  }
+
+  .hljs-title,
+  .hljs-section {
+    color: #DCDCAA;
+  }
+
+  .hljs-keyword,
+  .hljs-selector-tag {
+    color: #C586C0;
+  }
+
+  .hljs-emphasis {
+    font-style: italic;
+  }
+
+  .hljs-strong {
+    font-weight: bold;
+  }
+}
